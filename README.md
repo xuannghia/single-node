@@ -14,7 +14,7 @@ docker build -t whoami-curl:latest .
 ## Deploy 
 
 ```bash
-SERVICE_NAME=whoami docker stack deploy -c apps.compose.yml whoami --detach
+STACK_NAME=whoami docker stack deploy -c apps.compose.yml "$STACK_NAME" --detach
 ```
 
 ## Rollout
